@@ -8,14 +8,14 @@
 {% block body %}
 <form action="/add" method="POST">
     <label for="name">Name</label>
-    <input type="text" name="name" id="name" placeholder="name of player">
+    <input type="text" name="name" id="name" placeholder="name of player" required>
 
     <label for="Cat">Category</label>
-    <input type="text" name="cat" id="cat" placeholder="category">
+    <input type="text" name="cat" id="cat" placeholder="category" required>
 
     <label for="URL">URL</label>
 
-    <input type="text" name="url" id="url" placeholder="url of image">
+    <input type="text" name="url" id="url" placeholder="url of image" required>
     <input type="submit" value="Add">
 
 </form>
