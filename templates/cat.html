@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+
+{% block head %}
+<title> Category </title>
+{% endblock %}
+
+{% block body %}
+<h1>{{cat}}</h1>
+
+{% for catN in cats %}
+{% if cat==catN.cat %}
+<h4>{{catN.name}}</h4>
+<img src="{{catN.uri}}" alt="{{catN.name}}">
+<br>
+<a href="/">GO back</a>
+{% endif %}
+{% endfor %}
+{% endblock %}

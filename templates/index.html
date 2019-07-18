@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title> Home </title>
+{% endblock %}
+
+{% block body %}
+
+{% for catN in cats %}
+<a href="/{{catN.cat}}">{{catN.cat.capitalize()}}</a>
+
+<br>
+{% endfor %}
+<br>
+<a href="/add">Add</a>
+
+{% endblock %}
